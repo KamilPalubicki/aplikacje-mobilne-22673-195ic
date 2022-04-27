@@ -1,4 +1,4 @@
-### Lab 2 - Responsywne layouty
+### Lab 3 - Renderowane listy
 
 Do wykonania aplikacji użyte zostały:
 - React Native
