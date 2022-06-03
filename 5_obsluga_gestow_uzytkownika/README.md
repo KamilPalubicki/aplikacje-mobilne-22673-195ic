@@ -284,13 +284,13 @@ export default class TouchableScreen extends Component {
 
 ## swipe.js
 ![](assets/swipe.png)
-![](assets/swipe_2.png)
-![](assets/swipe_3.png)
-![](assets/swipe_4.png)
-![](assets/swipe_5.png)
-![](assets/swipe_6.png)
-![](assets/swipe_7.png)
-![](assets/swipe_8.png)
+![](assets/swipe2.png)
+![](assets/swipe3.png)
+![](assets/swipe4.png)
+![](assets/swipe5.png)
+![](assets/swipe6.png)
+![](assets/swipe7.png)
+![](assets/swipe8.png)
 
 ````js
 export default class SwipeScreen extends Component{
