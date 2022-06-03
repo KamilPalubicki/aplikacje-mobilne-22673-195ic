@@ -161,9 +161,13 @@ export default class ScrollView2 extends Component{
 
 ## touchable.js
 ![](assets/touchable.png)
+
 ![](assets/touchable_2.png)
+
 ![](assets/touchable_3.png)
+
 ![](assets/touchable_4.png)
+
 ![](assets/touchable_5.png)
 
 ````js
@@ -284,12 +288,19 @@ export default class TouchableScreen extends Component {
 
 ## swipe.js
 ![](assets/swipe.png)
+
 ![](assets/swipe2.png)
+
 ![](assets/swipe3.png)
+
 ![](assets/swipe4.png)
+
 ![](assets/swipe5.png)
+
 ![](assets/swipe6.png)
+
 ![](assets/swipe7.png)
+
 ![](assets/swipe8.png)
 
 ````js
