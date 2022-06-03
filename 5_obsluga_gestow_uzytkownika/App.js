@@ -3,11 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import Home from './components/home';
-import SelectPicker from './components/select_picker';
-import Text_Input from './components/text_input';
-import SwitchScreen from './components/switch';
-import DatePicker from './components/date_picker';
-import ActiveToast from "./components/active_toast";
+import ScrollView2 from './components/scroll_view_2';
+import ScrollView1 from './components/scroll_view1';
+import TouchableScreen from './components/touchable';
+import SwipeScreen from "./components/swipe";
 
 const Stack = createStackNavigator();
 
@@ -36,9 +35,9 @@ function App() {
             headerTitleStyle: {
               fontSize: 15,
             },
-          }} name="SelectPicker" component={SelectPicker} />
+          }} name="ScrollView2" component={ScrollView2} />
           <Stack.Screen options={{
-            title: 'TextInput',
+            title: 'ScrollView1',
             headerStyle: {
               backgroundColor: '#eee',
             },
@@ -46,9 +45,9 @@ function App() {
             headerTitleStyle: {
               fontSize: 40,
             },
-          }} name="TextInput" component={Text_Input} />
+          }} name="ScrollView1" component={ScrollView1} />
           <Stack.Screen options={{
-            title: 'Switch',
+            title: 'TouchableScreen',
             headerStyle: {
               backgroundColor: '#ddd',
             },
@@ -59,9 +58,9 @@ function App() {
             cardStyle: {
               backgroundColor: '#444',
             }
-          }} name="Switch" component={SwitchScreen} />
+          }} name="TouchableScreen" component={TouchableScreen} />
           <Stack.Screen options={{
-            title: 'DatePicker',
+            title: 'Swipeable Screen',
             headerStyle: {
               backgroundColor: '#ddd',
             },
@@ -72,20 +71,7 @@ function App() {
             cardStyle: {
               backgroundColor: '#444',
             }
-          }} name="DatePicker" component={DatePicker} />
-          <Stack.Screen options={{
-            title: 'ActiveToast',
-            headerStyle: {
-              backgroundColor: '#ddd',
-            },
-            headerTintColor: '#444',
-            headerTitleStyle: {
-              fontSize: 35,
-            },
-            cardStyle: {
-              backgroundColor: '#444',
-            }
-          }} name="ActiveToast" component={ActiveToast} />
+          }} name="SwipeScreen" component={SwipeScreen} />
         </Stack.Navigator>
       </NavigationContainer>
   );

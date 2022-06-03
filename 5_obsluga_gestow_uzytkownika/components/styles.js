@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import sortFilter from "./text_input";
+import sortFilter from "./scroll_view1";
 
 const styles = {}
 styles.home = StyleSheet.create({
@@ -22,187 +22,46 @@ styles.home = StyleSheet.create({
         color:'#444',
         fontSize:24,
     },
+    text: {
+        color:'#444',
+        fontSize:24,
+    },
 });
 
-styles.hookUseState = StyleSheet.create({
-    Container: {
-        flex: 1,
-        backgroundColor: '#ec4899',
-        alignItems: 'stretch',
-        justifyContent: 'center',
-        textAlign : 'center',
-        paddingHorizontal: 16,
-        paddingVertical: 12,
-    },
-    Text: {
-        color:'#000',
-        fontSize:17,
-    },
-    Ex: {
-        flex: 1,
+styles.content = StyleSheet.create({
+    container: {
         backgroundColor: '#444',
+        paddingHorizontal:32,
+        paddingVertical:32,
+        height: '100%',
+    },
+    example:{
+        backgroundColor: '#fa0',
         justifyContent: 'center',
         marginHorizontal: 16,
-        marginVertical: 15,
-        paddingHorizontal: 25,
-        paddingVertical: 25,
-        borderRadius: 8,
-        fontSize: 24,
-    },
-    Buttons: {
-        flexDirection: 'row',
-    },
-    Button: {
-        flex: 1,
-        backgroundColor: '#713FFF',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginVertical: 40,
-        paddingVertical: 46,
-        borderRadius:80,
-        elevation: 10,
-    }
-});
-styles.SwitchScr = StyleSheet.create({
-    centeredView: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: '#444',
-    },
-    modalView: {
-        margin: 30,
-        backgroundColor: "white",
-        borderRadius: 30,
-        padding: 45,
-        alignItems: "center",
-        shadowColor: "#ff0",
-        shadowOffset: {
-            width: 0,
-            height: 4
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 7,
-        elevation: 5
-    },
-    button: {
-        borderRadius: 50,
-        padding: 30,
-        elevation: 2,
-        backgroundColor: "#453AAA",
-    },
+        marginVertical: 32,
+        paddingHorizontal:16,
+        paddingVertical:16,
+        borderRadius:10,
 
-    textStyle: {
-        color: "black",
-        fontWeight: "bold",
-        textAlign: "center",
-        fontSize: 40,
-    },
-    modalText: {
-        marginBottom: 15,
-        textAlign: "center",
-        fontSize: 80,
-    }
-});
-styles.sortFilter = StyleSheet.create({
-    Container: {
-        flex: 1,
-        backgroundColor: '#CDF8F0',
-        alignItems: 'stretch',
-        justifyContent: 'center',
-        textAlign : 'center',
-    },
-    homeContainer: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'center',
-        backgroundColor: '#FFF',
-    },
-    title: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom:10
-    },
-    titleText: {
-        color:'#000',
-        fontSize:30,
     },
     text: {
-        fontWeight:'bold',
-        fontSize:15,
+        color:'#fa0',
+        fontSize:20,
     },
-    input: {
-        backgroundColor: '#ddd',
-        marginVertical:'2%',
-        padding:'3%',
-    }
-});
-
-styles.SelectPICK = StyleSheet.create({
-    pickerContainer: {
-        backgroundColor: '#BD8EFF',
-        alignItems: "center",
-        padding: 6,
-        height: 340,
-        marginTop:10,
-        marginLeft:30,
+    code:{
+        color:'#000',
+        fontSize:16,
     },
-    selectContainer:{
-        width: 300,
-        padding: 22,
+    buttons: {
+        flexDirection:'row'
     },
-    selectionContainer: {
-        justifyContent: "space-around",
-        alignItems: "center",
-        padding: 15,
-        marginTop: 15,
-        marginRight: 15,
-    },
-    container:{
-        flex: 1,
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        alignItems: "center",
-
-    },
-    selection: {
-        textAlign: "center",
-        fontSize: 20,
-        fontWeight: "bold"
-    },
-    pickerLabel: {
-        fontSize: 10,
-        fontWeight: "bold"
-    },
-    Button: {
-        flex: 1,
-        backgroundColor: '#713FFF',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginHorizontal: 86,
-        marginVertical: 48,
-        borderRadius:10,
-    },
-});
-styles.DatePicker = StyleSheet.create({
-    homeContainer: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'center',
-        backgroundColor: '#A8A8A8',
-        textAlignVertical : "center",
-        paddingTop:100,
-        paddingBottom:100
-    },
-    textContainer: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'center',
-        backgroundColor: '#fff',
-        textAlignVertical : "center",
-        borderRadius:30,
-        paddingTop:100,
+    button:{
+        backgroundColor: '#fa0',
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        marginHorizontal: 15,
+        marginVertical: 20,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -211,17 +70,129 @@ styles.DatePicker = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 4,
         elevation: 10,
+        height: "50px",
+        borderRadius:10,
+        borderColor: '#444',
+        borderWidth: 5,
+        width: 100,
+
+    },
+});
+
+styles.flexbox2 = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 8,
+        backgroundColor: "aliceblue",
+    },
+    box: {
+        width: 250,
+        height: 150,
+    },
+    scrollViewIndicator:{
+        alignContent:'space-between',
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    scrollIndicatorStyle:{
+        backgroundColor:'#fb1',
+    },
+    scrollIndicatorContainerStyle:{
+        backgroundColor:'#555',
+    },
+});
+
+styles.flexbox = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 8,
+        backgroundColor: "aliceblue",
+    },
+    box: {
+        width: 400,
+        height: 100,
+    },
+    row: {
+        flexDirection: "row",
+        flexWrap: "wrap",
+    },
+    button: {
+        paddingHorizontal: 8,
+        paddingVertical: 6,
+        borderRadius: 4,
+        backgroundColor: "oldlace",
+        alignSelf: "flex-start",
+        marginHorizontal: "1%",
+        marginBottom: 6,
+        minWidth: "48%",
+        textAlign: "center",
+    },
+    selected: {
+        backgroundColor: "coral",
+        borderWidth: 0,
+    },
+    buttonLabel: {
+        fontSize: 12,
+        fontWeight: "500",
+        color: "coral",
+    },
+    selectedLabel: {
+        color: "white",
+    },
+    label: {
+        textAlign: "center",
+        marginBottom: 10,
+        fontSize: 24,
+    },
+});
+styles.swipeScreen = StyleSheet.create({
+    container: {
+        flex: 1,
+        paddingTop: 80,
+    },
+    listItem: {
+        height: 90,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    leftSwipeItem: {
+        flex: 1,
+        alignItems: 'flex-end',
+        justifyContent: 'center',
+        paddingRight: 20
     },
     text:{
-        color:'black',
-        fontSize: 20,
-        marginBottom: 100,
-        marginLeft:100,
-        alignItems: 'center',
-        justifyContent: 'center',
-
+        paddingTop:20,
+        fontSize:30,
+        textAlign:'center'
     }
 });
+
+styles.swipeScreen2 = StyleSheet.create({
+    container: {
+        flex: 1,
+        paddingTop: 80,
+    },
+    listItem: {
+        height: 120,
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize:40
+    },
+    leftSwipeItem: {
+        flex: 1,
+        alignItems: 'flex-end',
+        justifyContent: 'center',
+        paddingRight: 20
+    },
+    text:{
+        fontSize:30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign:'right'
+    }
+});
+
 styles.Toast = StyleSheet.create({
     container: {
         flex: 1,
@@ -241,7 +212,7 @@ styles.Toast = StyleSheet.create({
         textAlign:'center'
     },
     text:{
-        fontSize:15,
+        fontSize:40,
         padding:1,
     },
 
