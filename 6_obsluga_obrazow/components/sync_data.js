@@ -44,7 +44,7 @@ export default class SyncData extends Component {
             <View style={styles.content.container}>
                 <ScrollView >
                     <View style={styles.content.example}>
-                        <Text >{this.state.internetConnection?`Połączono z internetem `:`Brak połączeni z internetem`}</Text>
+                        <Text >{this.state.internetConnection?`Połączono z internetem `:`Brak połączenia z internetem`}</Text>
                         <Switch value={this.state.internetConnection} onValueChange={val =>{this.setState({ internetConnection: val})}}/>
                     </View>
                     <View style={styles.content.example}>

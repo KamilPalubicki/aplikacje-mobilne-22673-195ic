@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import sortFilter from "./images";
 
 const styles = {}
 styles.home = StyleSheet.create({
