@@ -59,7 +59,9 @@ Do wykonania aplikacji użyte zostały:
 
 ## RegisterUser.js
 ![](assets/register.png)
+
 ![](assets/register2.png)
+
 ![](assets/register3.png)
 
 ````js
@@ -158,9 +160,9 @@ export default RegisterUser;
 ````
 
 ## ViewUser.js
-## Wyszukiwanie usera po ID (auto-increment)
+### Wyszukiwanie usera po ID (auto-increment)
 ![](assets/view.png)
-## Wyszukiwanie ID które nie istnieje w bazie
+### Wyszukiwanie ID które nie istnieje w bazie
 ![](assets/view2.png)
 
 ````js
@@ -224,9 +226,9 @@ export default ViewUser;
 ````
 
 ## ViewAllUser.js
-## Widok userów w pustej bazie
+### Widok userów w pustej bazie
 ![](assets/view_all.png)
-## Po wypełnieniu bazy
+### Po wypełnieniu bazy
 ![](assets/view_all2.png)
 
 ````js
@@ -296,10 +298,11 @@ export default ViewUser;
 ````
 
 ## DeleteUser.js
-## Usuwanie usera poprzez jego ID
+### Usuwanie usera poprzez jego ID
 ![](assets/delete.png)
+
 ![](assets/delete2.png)
-## Widok po usunięciu
+### Widok po usunięciu
 ![](assets/delete3.png)
 
 ````js
@@ -359,10 +362,11 @@ export default ViewUser;
 
 ## UpdateUser.js
 ![](assets/update.png)
-## Wyszukanie user z ID 3
+### Wyszukanie user z ID 3
 ![](assets/update2.png)
+
 ![](assets/update3.png)
-## Widok po aktualizacji
+### Widok po aktualizacji
 ![](assets/update4.png)
 
 ````js
