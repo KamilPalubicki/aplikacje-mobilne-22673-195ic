@@ -514,6 +514,7 @@ export default ViewUser;
     export default UpdateUser;
 ````
 ### Tworzenie zewnętrznej bazy
+
 ![](assets/sourcedatabase.png)
 
 ### Użycie bazy zewnętrznej
