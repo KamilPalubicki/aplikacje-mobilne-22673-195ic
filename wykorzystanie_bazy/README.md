@@ -513,3 +513,10 @@ export default ViewUser;
     
     export default UpdateUser;
 ````
+### Tworzenie zewnętrznej bazy
+![](assets/sourcedatabase.png)
+
+### Użycie bazy zewnętrznej
+````js
+  const db = openDatabase({name: 'UserDatabase.db', createFromLocation: 1});
+````
